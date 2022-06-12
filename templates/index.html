@@ -1,0 +1,35 @@
+<html>
+  <body>
+
+    <!-- Tool Description -->
+    <h1>AI Generated Text</h1>
+
+    <!-- Parameters form -->
+    <form action="" method="post">
+
+      <!-- Prompt Input field -->
+      <p>Prompt:</p>
+      <p><input type="text" name="prompt" /></p>
+
+      <!-- Max Length Input field -->
+      <p>Maximum Length:</p>
+      <p><input type="range" min="10" max="500" name="maxLength" /></p>
+
+      <!-- Temperature Input field -->
+      <p>Temperature:</p>
+      <p><input type="range" min="1" max="99" name="temperature" /></p>
+
+      <!-- Generate button -->
+      <p><input type="submit" name="generate" value="Generate"/></p>
+
+      <!-- Download button -->
+      <!--p><input type="submit" name="download" value="Download"/></p-->
+
+      <!-- Result area -->
+	  OpenAI GPT-3
+      <textarea rows="10" name="text" style="width: 100%">{{ results['GPT-3'] }}</textarea>
+	  GPT-Neo
+      <textarea rows="10" name="text" style="width: 100%">{{ results['Neo'] }}</textarea>
+    </form>
+  </body>
+</html>
