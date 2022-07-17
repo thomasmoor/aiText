@@ -49,7 +49,7 @@ Session(app)
 # Initiate the GPT-3 model
 # key=os.environ["OPENAI_API_KEY"]
 if useGPT3:
-  print(f"OpenAI key: {config.OPENAI_API_KEY}")
+  # print(f"OpenAI key: {config.OPENAI_API_KEY}")
   openai.api_key=config.OPENAI_API_KEY
 
 # Initiate the GPT-Neo Model
